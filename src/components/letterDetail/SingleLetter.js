@@ -51,17 +51,23 @@ function SingleLetter() {
         </div>
 
         <div
-          className="writtenAsMedialForm"
-          // className={
-          //   writtenasmedialform
-          //     ? "singleLetter__writtenAsMedialForm"
-          //     : "singleLetter__writtenAsMedialFormNA"
-          // }
+          // className="writtenAsMedialForm"
+          className={
+            writtenasmedialform === "cannot  attach a letter after it."
+              ? "singleLetter__writtenAsMedialFormNA"
+              : "singleLetter__writtenAsMedialForm"
+          }
         >
           Written form in the middle of the word:
           <span>{writtenasmedialform}</span>
         </div>
-        <div className="singleLetter__writtenAsFinalForm">
+        <div
+          className={
+            writtenasfinalform === "cannot  attach a letter after it."
+              ? "singleLetter__writtenAsFinalFormNA"
+              : "singleLetter__writtenAsFinalForm"
+          }
+        >
           Written form at the end of the word:
           <span>{writtenasfinalform}</span>
         </div>

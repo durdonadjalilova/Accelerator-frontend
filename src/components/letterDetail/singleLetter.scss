@@ -4,6 +4,7 @@
     border: 1px solid green;
     text-align: center;
     margin: auto;
+    color: darkblue;
 
     h1 {
         font-size: 60px;
@@ -19,16 +20,23 @@
     &__writtenForms {
         display: flex;
     }
-    &__writtenAsInitialForm, &__writtenAsMedialForm, &__writtenAsFinalForm {
+    &__writtenAsInitialForm, &__writtenAsMedialForm, &__writtenAsMedialFormNA , &__writtenAsFinalFormNA,  &__writtenAsFinalForm {
         padding: 5%;
         font-size: 30px;
+        font-weight: bold;
         display: flex;
         flex-direction: column;
     }
 
-    // &__writtenAsMedialForm > span, &__writtenAsFinalForm > span {
-    //     font-size: small;
+    // &__writtenAsMedialFormNA  {
+    //     font-size: 30px;
     // }
+    &__writtenAsMedialFormNA > span,  &__writtenAsFinalFormNA > span{
+        padding: 10%;
+        font-size: 30px;
+        font-weight: 100;
+    }
+
     &__writtenAsInitialForm> span, &__writtenAsMedialForm >span, &__writtenAsFinalForm>span {
         font-size: 100px;
     }

@@ -1,8 +1,11 @@
 .letterCard {
     height: 500px;
     width: 300px;
-    border: 1px solid green;
+    border: 2px solid green;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
     
 
     &__letter {
