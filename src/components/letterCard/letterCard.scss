@@ -1,0 +1,15 @@
+.letterCard {
+    height: 500px;
+    width: 300px;
+    border: 1px solid green;
+    text-align: center;
+    
+
+    &__letter {
+        font-size:200px;
+    };
+
+    &__transliteration {
+        font-size: 100px;
+    }
+}

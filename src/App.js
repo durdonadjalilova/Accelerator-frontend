@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ArabLetters from "./components/arabLetters/ArabLetters";
+import ArabicLetters from "./components/arabicLetters/ArabicLetters";
 import SingleLetter from "./components/letterDetail/SingleLetter";
 import "./App.css";
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ArabLetters />} />
+          <Route path="/" element={<ArabicLetters />} />
           <Route path="/letter/:id" element={<SingleLetter />} />
         </Routes>
       </BrowserRouter>

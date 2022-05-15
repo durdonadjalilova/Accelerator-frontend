@@ -1,0 +1,39 @@
+.singleLetter {
+    width: 80%;
+    height: 70%;
+    border: 1px solid green;
+    text-align: center;
+    margin: auto;
+
+    h1 {
+        font-size: 60px;
+    }
+
+    &__letter { 
+        font-size: 200px;
+    };
+
+    &__transliteration, &__asInEnglishWord {
+        font-size: 40px;
+    }
+    &__writtenForms {
+        display: flex;
+    }
+    &__writtenAsInitialForm, &__writtenAsMedialForm, &__writtenAsFinalForm {
+        padding: 5%;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    // &__writtenAsMedialForm > span, &__writtenAsFinalForm > span {
+    //     font-size: small;
+    // }
+    &__writtenAsInitialForm> span, &__writtenAsMedialForm >span, &__writtenAsFinalForm>span {
+        font-size: 100px;
+    }
+
+    // &__writtenAsInitialForm {
+    //     font-size: 40px;
+    // }
+}
